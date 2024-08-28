@@ -6,7 +6,7 @@
 html {
   background-color: #292553;
   color: rgb(252, 229, 238);
-  font-family: "Moderustic", sans-serif;
+  font-family: "Moderustic", arial, sans-serif;
 }
 
 p {
@@ -56,6 +56,7 @@ main .pesquisa button {
   padding: 2vw;
   font-size: 1.7vw;
   border: none;
+  user-select: none;
   border-radius: 50px;
   background-color: rgba(252, 229, 238, 0.801);
   color: rgb(8, 2, 19);
@@ -67,11 +68,13 @@ main .pesquisa button:hover {
   cursor: pointer;
   transform: translateY(-0.4vw);
   background-color: rgb(252, 229, 238);
+  user-select: none;
 }
 main .pesquisa button:active {
   transform: translateY(-0.8vw);
   background-color: rgb(255, 212, 147);
   animation: 1s scale;
+  user-select: none;
 }
 main h1 {
   white-space: nowrap;
@@ -104,7 +107,7 @@ main h1 {
     font-size: 5vw;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   main {
     user-select: none;
   }
@@ -115,6 +118,7 @@ main h1 {
   main .frases {
     width: 80%;
     height: 40%;
+    color: rgb(252, 229, 238);
   }
   main .frases:hover {
     transform: translateY(0);
@@ -124,6 +128,7 @@ main h1 {
   main .frases .p {
     user-select: all;
     font-size: 4vw;
+    color: rgb(252, 229, 238);
   }
   main .pesquisa button {
     font-size: 5vw;

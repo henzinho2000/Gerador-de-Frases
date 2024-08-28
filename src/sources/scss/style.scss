@@ -1,5 +1,4 @@
 @import "var.scss";
-@import "footer";
 
 * {
 	margin: 0;
@@ -54,6 +53,7 @@ main {
 			padding: 2vw;
 			font-size: $font-size-p;
 			border: none;
+			user-select: none;
 			border-radius: 50px;
 			background-color: rgba(252, 229, 238, 0.801);
 			color: $color-black;
@@ -62,11 +62,13 @@ main {
 				@include shadow();
 				transform: translateY(-0.4vw);
 				background-color: $color-white;
+				user-select: none;
 			}
 			&:active {
 				transform: translateY(-0.8vw);
 				background-color: rgb(255, 212, 147);
 				animation: 1s scale;
+				user-select: none;
 			}
 		}
 	}
@@ -111,7 +113,7 @@ main {
 		}
 	}
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 	main {
 		user-select: none;
 		h1 {
@@ -121,6 +123,7 @@ main {
 		.frases {
 			width: 80%;
 			height: 40%;
+			color: $color-white;
 			&:hover{
 				transform: translateY(0);
 				box-shadow: none;
@@ -129,6 +132,7 @@ main {
 			.p{
 				user-select: all;
 				font-size: 4vw;
+				color: $color-white;
 			}
 		}
 		.pesquisa {

@@ -105,19 +105,30 @@ main h1 {
   }
 }
 @media only screen and (max-width: 600px) {
+  main {
+    user-select: none;
+  }
   main h1 {
     font-size: 11vw;
+    user-select: none;
   }
   main .frases {
     width: 80%;
     height: 40%;
   }
+  main .frases:hover {
+    transform: translateY(0);
+    box-shadow: none;
+    cursor: auto;
+  }
   main .frases .p {
+    user-select: all;
     font-size: 4vw;
   }
   main .pesquisa button {
     font-size: 5vw;
     padding: 3vw;
+    user-select: none;
   }
 }
 

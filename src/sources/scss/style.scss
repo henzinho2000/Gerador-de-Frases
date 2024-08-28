@@ -113,14 +113,21 @@ main {
 }
 @media only screen and (max-width: 600px) {
 	main {
+		user-select: none;
 		h1 {
 			font-size: 11vw;
+			user-select: none;
 		}
 		.frases {
 			width: 80%;
 			height: 40%;
-
+			&:hover{
+				transform: translateY(0);
+				box-shadow: none;
+				cursor: auto;
+			}
 			.p{
+				user-select: all;
 				font-size: 4vw;
 			}
 		}
@@ -128,6 +135,7 @@ main {
 			button {
 				font-size: 5vw;
 				padding: 3vw;
+				user-select: none;
 			}
 		}
 	}

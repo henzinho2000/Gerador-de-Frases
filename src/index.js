@@ -36,7 +36,6 @@ function text() {
 	const i = Math.floor(Math.random() * frases.length);
 	var text = document.querySelector(".frases");
 
-
 	button.addEventListener("mousedown", () => {
 		button.style.transform = "scale(1.03)";
 	});

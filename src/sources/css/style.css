@@ -1,140 +1,136 @@
 * {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+  user-select: none;
 }
 
 html {
-  background-color: #292553;
-  color: rgb(252, 229, 238);
-  font-family: "Moderustic", arial, sans-serif;
+	background-color: #292553;
+	color: rgb(252, 229, 238);
+	font-family: "Moderustic", arial, sans-serif;
 }
 
 p {
-  font-size: 1.7vw;
+	font-size: 1.7vw;
 }
 
 main {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
 }
 main .frases {
-  width: 50%;
-  height: 30%;
-  background-color: rgb(9, 8, 43);
-  border-radius: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1vw 2vw;
-  transition: transform 0.2s, box-shadow 0.2s, background-color 0.1s;
-  color: rgba(252, 229, 238, 0.541);
+	width: 50%;
+	height: 30%;
+	background-color: rgb(9, 8, 43);
+	border-radius: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1vw 2vw;
+	transition: transform 0.2s, box-shadow 0.2s, background-color 0.1s;
+	color: rgba(252, 229, 238, 0.541);
 }
 main .frases:hover {
-  transform: translateY(-1vw);
-  box-shadow: 1vw 1vw 0vw 0vw rgb(8, 2, 19);
-  cursor: pointer;
-  color: rgb(252, 229, 238);
+	transform: translateY(-1vw);
+	box-shadow: 1vw 1vw 0vw 0vw rgb(8, 2, 19);
+	cursor: pointer;
+	color: rgb(252, 229, 238);
 }
 main .frases:hover i {
-  color: rgb(252, 229, 238);
+	color: rgb(252, 229, 238);
 }
 main .frases .p {
-  font-size: 1.7vw;
-  text-align: justify;
-  width: 100%;
+	font-size: 1.7vw;
+	text-align: justify;
+	width: 100%;
+  user-select: all;
 }
 main .pesquisa {
-  width: 14vw;
-  display: flex;
-  justify-content: space-evenly;
+	width: 14vw;
+	display: flex;
+	justify-content: space-evenly;
 }
 main .pesquisa button {
-  padding: 2vw;
-  font-size: 1.7vw;
-  border: none;
-  user-select: none;
-  border-radius: 50px;
-  background-color: rgba(252, 229, 238, 0.801);
-  color: rgb(8, 2, 19);
-  transition: all 0.1s;
+	padding: 2vw;
+	font-size: 1.7vw;
+	border: none;
+	user-select: none;
+	border-radius: 50px;
+	background-color: rgba(252, 229, 238, 0.801);
+	color: rgb(8, 2, 19);
+	transition: all 0.1s;
 }
 main .pesquisa button:hover {
-  transform: translateY(-1vw);
-  box-shadow: 1vw 1vw 0vw 0vw rgb(8, 2, 19);
-  cursor: pointer;
-  transform: translateY(-0.4vw);
-  background-color: rgb(252, 229, 238);
-  user-select: none;
+	transform: translateY(-1vw);
+	box-shadow: 1vw 1vw 0vw 0vw rgb(8, 2, 19);
+	cursor: pointer;
+	transform: translateY(-0.4vw);
+	background-color: rgb(252, 229, 238);
+	user-select: none;
 }
 main .pesquisa button:active {
-  transform: translateY(-0.8vw);
-  background-color: rgb(255, 212, 147);
-  animation: 1s scale;
-  user-select: none;
+	transform: translateY(-0.8vw);
+	background-color: rgb(255, 212, 147);
+	animation: 1s scale;
+	user-select: none;
 }
 main h1 {
-  white-space: nowrap;
-  font-family: monospace;
-  width: 14ch;
-  font-size: 6vw;
-  font-weight: 900;
-  overflow: hidden;
-  animation: write 1.5s steps(14, end) forwards;
+	white-space: nowrap;
+	font-family: monospace;
+	width: 14ch;
+	font-size: 6vw;
+	font-weight: 900;
+	overflow: hidden;
+	animation: write 1.5s steps(14, end) forwards;
 }
 @keyframes write {
-  0% {
-    width: 0;
-  }
+	0% {
+		width: 0;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
-  main h1 {
-    font-size: 10vw;
-  }
-  main .frases {
-    width: 80%;
-    height: 40%;
-    padding: 5vw;
-  }
-  main .frases .p {
-    font-size: 3vw;
-  }
-  main .pesquisa button {
-    font-size: 5vw;
-  }
+	main h1 {
+		font-size: 10vw;
+	}
+	main .frases {
+		width: 80%;
+		height: 40%;
+		padding: 5vw;
+	}
+	main .frases .p {
+		font-size: 3vw;
+	}
+	main .pesquisa button {
+		font-size: 5vw;
+	}
 }
 @media only screen and (max-width: 800px) {
-  main {
-    user-select: none;
-  }
-  main h1 {
-    font-size: 11vw;
-    user-select: none;
-  }
-  main .frases {
-    width: 80%;
-    height: 40%;
-    color: rgb(252, 229, 238);
-  }
-  main .frases:hover {
-    transform: translateY(0);
-    box-shadow: none;
-    cursor: auto;
-  }
-  main .frases .p {
-    user-select: all;
-    font-size: 4vw;
-    color: rgb(252, 229, 238);
-  }
-  main .pesquisa button {
-    font-size: 5vw;
-    padding: 3vw;
-    user-select: none;
-  }
+	main h1 {
+		font-size: 11vw;
+	}
+	main .frases {
+		width: 80%;
+		height: 40%;
+		color: rgb(252, 229, 238);
+	}
+	main .frases:hover {
+		transform: translateY(0);
+		box-shadow: none;
+		cursor: auto;
+	}
+	main .frases .p {
+		font-size: 4vw;
+		color: rgb(252, 229, 238);
+	}
+	main .pesquisa button {
+		font-size: 5vw;
+		padding: 3vw;
+	}
 }
 
 /*# sourceMappingURL=style.css.map */

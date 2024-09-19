@@ -44,10 +44,10 @@ main .frases:hover i {
 	color: rgb(252, 229, 238);
 }
 main .frases .p {
-	font-size: 1.7vw;
+	font-size: 1.8vw;
 	text-align: justify;
 	width: 100%;
-  user-select: all;
+  user-select: none;
 }
 main .pesquisa {
 	width: 14vw;
@@ -78,6 +78,10 @@ main .pesquisa button:active {
 	animation: 1s scale;
 	user-select: none;
 }
+#copie{
+	margin-left: 10vw;
+}
+
 main h1 {
 	white-space: nowrap;
 	font-family: monospace;
@@ -130,6 +134,24 @@ main h1 {
 	main .pesquisa button {
 		font-size: 5vw;
 		padding: 3vw;
+	}
+}
+
+.copiado{
+	display: none;
+	position: absolute;
+	top: 50vh;
+	background-color: #ff9419;
+	padding: 2vw; 
+	border-radius: 1vw;
+}
+
+@keyframes desaparecer {
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
 	}
 }
 

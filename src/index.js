@@ -10,6 +10,8 @@ function Hours() {
 	} else {
 		span.innerHTML = "MANHÃ";
 	}
+
+	
 }
 Hours();
 let frases = [

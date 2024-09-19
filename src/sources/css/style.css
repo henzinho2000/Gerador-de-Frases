@@ -78,9 +78,6 @@ main .pesquisa button:active {
 	animation: 1s scale;
 	user-select: none;
 }
-#copie{
-	margin-left: 10vw;
-}
 
 main h1 {
 	white-space: nowrap;
@@ -94,6 +91,24 @@ main h1 {
 @keyframes write {
 	0% {
 		width: 0;
+	}
+}
+
+.copiado{
+	display: none;
+	position: absolute;
+	top: 50vh;
+	background-color: #ff9419;
+	padding: 2vw; 
+	border-radius: 2vw;
+}
+
+@keyframes desaparecer {
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
 	}
 }
 
@@ -111,6 +126,12 @@ main h1 {
 	}
 	main .pesquisa button {
 		font-size: 5vw;
+	}
+	.copiado{
+		padding: 5vw;
+	}
+	.copiado p{
+		font-size: 2.5vw;
 	}
 }
 @media only screen and (max-width: 800px) {
@@ -135,23 +156,11 @@ main h1 {
 		font-size: 5vw;
 		padding: 3vw;
 	}
-}
-
-.copiado{
-	display: none;
-	position: absolute;
-	top: 50vh;
-	background-color: #ff9419;
-	padding: 2vw; 
-	border-radius: 1vw;
-}
-
-@keyframes desaparecer {
-	from{
-		opacity: 1;
+	.copiado{
+		padding: 8vw;
 	}
-	to{
-		opacity: 0;
+	.copiado p{
+		font-size: 4vw;
 	}
 }
 
